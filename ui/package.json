@@ -104,14 +104,32 @@
     "prettier": "^1.2.2",
     "require-dir": "~1.0.0",
     "uglify-save-license": "~0.4.1",
-    "wiredep": "~2.2.0"
+    "wiredep": "~2.2.0",
+    "angular": "~1.6.0",
+    "angular-animate": "~1.6.0",
+    "angular-cookies": "~1.6.0",
+    "angular-material": "^1.0.6",
+    "angular-mocks": "~1.6.0",
+    "angular-moment": "1.0.0-beta.3",
+    "angular-nvd3": " 1.0.0-beta",
+    "angular-sanitize": "~1.6.0",
+    "angular-touch": "~1.6.0",
+    "angular-aria": "1.7.0",
+    "angular-messages": "1.7.0",
+    "@uirouter/angularjs": "^0.2.18",
+    "jquery": "~2.1.1",
+    "lodash": "~4.13.1",
+    "socket.io-client": "~1.4.8",
+    "webpack": "2.4.1",
+    "html-webpack-plugin": "3.0.0"
   },
   "engines": {
     "node": ">=6.10.x"
   },
   "scripts": {
     "init": "npm install",
-    "install": "bower --allow-root install",
-    "test": "./node_modules/.bin/karma start --single-run --browsers Chrome"
+    "install": "echo \"Starting the package install\" && sudo npm install",
+    "test": "./node_modules/.bin/karma start --single-run --browsers Chrome",
+    "build": "./node_modules/.bin/webpack --mode production"
   }
 }
